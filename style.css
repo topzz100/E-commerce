@@ -37,9 +37,29 @@ li{
   justify-content: center;
   align-items: center;
 }
+/* .nav-list li::after{
+  width
+} */
+.nav-list li{
+  position: relative;
+}
 .nav-list a{
+  /* position: relative; */
   font-size: 1rem;
   margin: 12px;
+  padding: 5px 0;
+  transition: 0.5s;
+} 
+/* .nav-list a::after{
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 100%;
+  left: 0; 
+  background-color: rgb(228, 45, 21);
+} */
+.nav-list a:hover{
+  border-bottom: 2px solid rgb(228, 45, 21);
 }
 .icon{
   margin-right: 12px;
