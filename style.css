@@ -14,7 +14,11 @@ li{
 }
 /* nav{
 
-} */
+} */body{
+  position: relative;
+  transition: .5s;
+}
+
 .nav-bar{
   width: 100%;
   padding: 15px 100px;
@@ -41,31 +45,133 @@ li{
   width
 } */
 .nav-list li{
-  position: relative;
+  /* position: relative; */
 }
 .nav-list a{
-  /* position: relative; */
+   position: relative; 
   font-size: 1rem;
   margin: 12px;
   padding: 5px 0;
   transition: 0.5s;
+  color: black;
+
 } 
-/* .nav-list a::after{
+.nav-list a::after{
   position: absolute;
+  content: "";
   width: 100%;
   height: 2px;
   top: 100%;
   left: 0; 
+  transform: scaleX(0);
   background-color: rgb(228, 45, 21);
-} */
-.nav-list a:hover{
-  border-bottom: 2px solid rgb(228, 45, 21);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+  
+}
+.nav-list a:hover::after{
+  transform: scaleX(1);
 }
 .icon{
   margin-right: 12px;
   border: 1px solid black;
   border-radius: 50%;
   padding: 3px 7px;
+  transition: .5s;
+  cursor: pointer;
+  color: black;
 }
+.icon:hover{
+  background-color: rgb(228, 45, 21);
+  color: white;
+  border: none;
+}
+.nav-top, .menu-bar{
+  display: none;
+}
+@media(max-width:1024px){
+  .nav-bar{
+    padding: 15px 50px;
+  }
+  .nav-list a{
+   font-size: 1rem;
+   margin: 8px;
+   padding: 4px 0;
+ } 
+ .icon{
+  margin-right: 8px;
+  padding: 1px 6px;
+}
+.icon i{
+  font-size: .8rem;
+}
+ 
+}
+@media(max-width:768px){
+  .nav-bar{
+    padding: 20px 50px;
+  }
+  .nav-menu{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    transition: 0.5s ease-in-out;
+    /* transform-origin: left; */
+    z-index: 999;
+    background-color: white;
+  }
+  .nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgb(228, 45, 21);
+  }
+  .nav-top .logo a span{
+    color: white;
+  }
+  .menu-bar{
+    display: block;
+  }
+  .nav-icons{
+    display: none;
+  }
+  .nav-icons:last-child{
+    display: block;
+  }
+  .nav-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    margin-top: 20px;
+    /* margin: 20px 10px; */
+  }
+  .nav-list li{
+    margin: 10px 0;
+    width: 100%;
+    margin: 15px 0;
+  }
+  .nav-list a{
+    padding: 10px 200px 10px 20px;
+    /* padding: 5px 10px; */
+    font-size: 1.2rem;
+  }
+  .menu-bar, .close{
+    font-size: 1.5rem;
+  
+    /* font-weight: 400; */
+  }
+  .nav-menu.show{
+    left: 0;
+  }
+  body.show{
+    background-color: rgba(158, 158, 158, 0.966);
+  }
+}
+
 
 
