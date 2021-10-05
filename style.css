@@ -12,9 +12,7 @@ a{
 li{
   list-style: none;
 }
-/* nav{
-
-} */body{
+body{
   position: relative;
   transition: .5s;
 }
@@ -41,9 +39,7 @@ li{
   justify-content: center;
   align-items: center;
 }
-/* .nav-list li::after{
-  width
-} */
+
 .nav-list li{
   /* position: relative; */
 }
@@ -118,7 +114,6 @@ li{
     width: 80%;
     height: 100vh;
     transition: 0.5s ease-in-out;
-    /* transform-origin: left; */
     z-index: 999;
     background-color: white;
   }
@@ -157,13 +152,10 @@ li{
   }
   .nav-list a{
     padding: 10px 200px 10px 20px;
-    /* padding: 5px 10px; */
     font-size: 1.2rem;
   }
   .menu-bar, .close{
     font-size: 1.5rem;
-  
-    /* font-weight: 400; */
   }
   .nav-menu.show{
     left: 0;
