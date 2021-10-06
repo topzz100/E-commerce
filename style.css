@@ -130,10 +130,10 @@ body{
   .menu-bar{
     display: block;
   }
-  .nav-icons{
+  .icon{
     display: none;
   }
-  .nav-icons:last-child{
+  .cart{
     display: block;
   }
   .nav-list{
@@ -165,5 +165,37 @@ body{
   }
 }
 
+/* hero */
+.container, .glide, .glide-track, ul{
+  width: 100%;
+  position: relative;
+} 
+.slide-1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(235, 232, 232);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+/* .slide-content{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(25%, -50%);
+}
+ img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+} */
+.slide-1 img{
+  max-width: 100%;
+}
+/* hero ends */
 
 
