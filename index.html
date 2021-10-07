@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-commerce</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
+
+
   <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  />
   <!-- custom css  -->
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -68,23 +71,49 @@
     <!-- hero section -->
     <section class="hero">
       <div class="container">
-        <div class="glide">
+        <div class="glide" id="glide-1">
           <div class="glide__track glide-track" data-glide-el="track">
             <ul class="glide__slides">
               <li class="glide__slide slide-1">
                 <div class="slide-content">
-                  <p>New Inspiration 2020</p>
+                  <p class="lit">New Inspiration 2020</p>
                   <h4>clothing made for you</h4>
-                  <p>trending from men and women style collection</p>
+                  <p class="lit-2">trending from men and women style collection</p>
                   <div class="btn-group">
                     <button class="btn-slide-1">shop women's </button>
                     <button class="btn-slide-1">shop men's </button>
                   </div>
                 </div>
                 
-                  <img src="./images/banner_2.png" alt="">
-              
+                <img src="./images/banner_1.png" alt="">
+              </li>
+
+              <li class="glide__slide slide-1">
+                <div class="slide-content">
+                  <p class="lit">New Inspiration 2020</p>
+                  <h4>clothing made for you</h4>
+                  <p class="lit-2">trending from men and women style collection</p>
+                  <div class="btn-group">
+                    <button class="btn-slide-1">shop women's </button>
+                    <button class="btn-slide-1">shop men's </button>
+                  </div>
+                </div>
                 
+                <img src="./images/banner_2.png" alt="">
+              </li>
+
+              <li class="glide__slide slide-1">
+                <div class="slide-content">
+                  <p class="lit">New Inspiration 2020</p>
+                  <h4>clothing made for you</h4>
+                  <p class="lit-2">trending from men and women style collection</p>
+                  <div class="btn-group">
+                    <button class="btn-slide-1">shop women's </button>
+                    <button class="btn-slide-1">shop men's </button>
+                  </div>
+                </div>
+                
+                <img src="./images/banner_3.png" alt="">
               </li>
             </ul>
           </div>
@@ -101,6 +130,10 @@
 
   
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  
+
   <script src="./js/index.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 </html>
