@@ -89,6 +89,13 @@ li{
 .nav-top, .menu-bar{
   display: none;
 }
+@media(max-width:1110px){
+  .nav-bar{
+  
+    padding: 15px 50px;
+   
+  }
+}
 
 @media(max-width:768px){
   .nav-bar{
@@ -217,85 +224,58 @@ margin-left: 100px;
   bottom: 0;
   right: -10%;
   flex: 50%;
+  max-width: 100%;
+  
 
    /* max-width:70%;  */
 
 }
+@media(max-width:1110px){
+  .slide-content{
+    position: absolute;
+    /* top: -50px; */
+    left: 50%;
+    transform: translate(-50% ,-35%);
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
 
-/* .slide-2{
-  width: 100%;
-  height: 100vh;
-  background-color: red;
-}
-.slide-3{
-  width: 100%;
-  height: 100vh;
- background-color: blue;
-}  */
-/* .glide__slide{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(235, 232, 232);
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  flex-wrap: wrap;
+  }
+  .glide__slide img{
+    position: absolute;
+    bottom: -30%;
+    right: 0;
+    flex: 50%;
+    max-width: 100%;
+  
+  }
 }
 
-.slide-content{
-  flex: 70%;
-height: 100%;
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
+@media(max-width: 768px){
+  /* .glide__slide{
+    flex-direction: column;
+  } */
+  .slide-content{
+    position: absolute;
+    /* top: -50px; */
+    left: 50%;
+    transform: translate(-50% ,-30%);
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
 
-margin-left: 100px;
-}
-.slide-content .lit{
-  font-size: .8rem;
-  color: grey;
-}
-.slide-content h4{
-  margin: 15px 0;
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.slide-content .lit-2{
-  font-size: 1rem;
-  margin-bottom: 15px;
-  color: grey;
-}
-
-.slide-content .btn-slide-1{
-  padding: 10px 20px;
-  text-transform: uppercase;
-  background-color: transparent;
-  border: 1px solid black;
-   font-size: .9rem; 
-  font-size: 1rem;
+  }
+  .glide__slide img{
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    flex: 50%;
+    max-width: 100%;
+  
+  }
 
 }
-.slide-content .btn-slide-1:first-child{
-  background-color: black;
-  color: white;
-}
-
-.slide-1 img{
-  position: absolute;
-  bottom: 0;
-  right: -10%;
-  flex: 50%;
-
-   max-width:70%; 
-
-} */
 
 /* hero ends */
-
 
 
