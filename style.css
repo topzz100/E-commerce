@@ -41,9 +41,7 @@ li{
   justify-content: center;
   align-items: center;
 }
-/* .nav-list li::after{
-  width
-} */
+
 .nav-list li{
   /* position: relative; */
 }
@@ -177,7 +175,6 @@ li{
   justify-content: center;
   align-items: end;
   background-color: rgb(221, 219, 219);
-  /* background-color: green; */
 }
 .slide-content{
  flex: 50%;
@@ -252,12 +249,8 @@ margin-left: 100px;
 }
 
 @media(max-width: 768px){
-  /* .glide__slide{
-    flex-direction: column;
-  } */
   .slide-content{
     position: absolute;
-    /* top: -50px; */
     left: 50%;
     transform: translate(-50% ,-30%);
     justify-content: center;
