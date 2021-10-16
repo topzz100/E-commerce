@@ -271,4 +271,34 @@ margin-left: 100px;
 
 /* hero ends */
 
+/* categories */
+  .categories{
+    margin: 40px 100px ;
+
+  }
+  .categories h4{
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .styles{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ .styles .img-box{
+  /* width: 350px; */
+  flex: 30%;
+  margin: 10px;
+  border-radius: 10px;
+  }
+  .styles .img-box img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transform: ;
+    /* transform: scaleX(150%) scaleY(150%); */
+  }
+/* categories ends */
+
 
