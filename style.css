@@ -279,19 +279,24 @@ margin-left: 100px;
   .categories h4{
     text-align: center;
     font-size: 1.3rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
   }
   .styles{
     position: relative;
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
   }
   
  .styles .img-box{
   position: relative;
   /* width: 350px; */
-  flex: 30%;
+  width: 350px;
   margin: 10px;
   border-radius: 10px;
   overflow: hidden;
@@ -359,6 +364,26 @@ margin-left: 100px;
   styles .img-box:hover button{
     background: black;
     border: 1px solid balck;
+  }
+
+  @media(max-width: 768px){
+    .categories{
+      margin: 40px 50px;
+    }
+    .styles{
+      flex-direction: column;
+    }
+    .styles .img-box{
+      max-width: 350px;
+    }
+  }
+  @media(max-width: 450px){
+    .styles .img-box{
+      width: 300px;
+    }
+    .categories{
+      margin: 40px 10px;
+    }
   }
 
 /* categories ends */
