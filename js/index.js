@@ -13,3 +13,6 @@ close.addEventListener('click', () => {
   navMenu.classList.remove('show');
   body.classList.remove('show');
 });
+
+const prod = new Product()
+prod.getProduct()
