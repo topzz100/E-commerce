@@ -3,9 +3,9 @@ class Product{
 
   }
   getProduct = async() => {
-    const products = await fetch('products.json').then(result => console.log(result.json));
-    // const res = await products.json
-  // console.log(products);    
+    const products = await fetch('products.json')
+    const res = await products.json()
+    return res.products;  
 
   }
 
